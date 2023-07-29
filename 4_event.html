@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <div>on blur:</div>
+    <input type="text" onblur="alert('sedang tidak fokus')">
+    <br>
+    <br>
+    <div>onchange:</div>
+    <select name="" id="" onchange="alert(this.value)">
+      <option value="senin">Senin</option>
+      <option value="selasa">Selasa</option>
+      <option value="rabu">Rabu</option>
+      <option value="kamis">Kamis</option>
+      <option value="jumat">Jumat</option>
+      <option value="sabtu">Sabtu</option>
+      <option value="minggu">Minggu</option>
+    </select>
+    <br>
+    <br>
+    <div>onclick:</div>
+    <p onclick="alert('aku ditekan')">klik saya......</p>
+    <br>
+    <br>
+    <p ondblclick="alert('aduh geli')">klik saya 2 kali</p>
+    <br>
+    <br>
+    <div>onfocus:</div>
+    <input type="text" onfocus="alert('sudah fokus lagi')">
+    <br>
+    <br>
+    <div>onkeydown:</div>
+    <input type="text" onkeydown="alert(this.value)">
+    <br>
+    <br>
+    <div>onkeypress:</div>
+    <input type="text" onkeypress="console.log(this.value)">
+    <br>
+    <br>
+    <div>onkeyup:</div>
+    <input type="text" onkeyup="console.log('lepaskan aku')">
+    <br>
+    <br>
+  </body>
+</html>

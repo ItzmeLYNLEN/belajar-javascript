@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <span id="day"></span>,<span id="date"></span> <span id="month"></span> <span id="year"></span>
+    <br>
+    <br>
+    <div id="clock">00:00:00</div>
+
+    <script>
+        var time = new Date(); 
+
+            var days = [
+                "senin",
+                "selasa",
+                "rabu",
+                "kamis",
+                "jumat",
+                "sabtu",
+                "minggu"
+            ]
+            var months = [
+                "januari",
+                "februari",
+                "maret",
+                "april",
+                "mei",
+                "juni",
+                "juli",
+                "agustus",
+                "september",
+                "oktober",
+                "november",
+                "desember",
+            ]
+        
+        document.getElementById("day").innerHTML = days[time.getDay()];
+        document.getElementById("date").innerHTML = time.getDate();
+        document.getElementById("month").innerHTML = months[time.getMonth()];
+        document.getElementById("year").innerHTML = time.getFullYear();
+
+        setInterval(function (){
+            var now = new Date()
+            hours = now.getHours()
+            minutes = now.getMinutes()
+            seconds = now.getSeconds();
+
+            document.getElementById("clock").innerHTML = 
+            hours + ':' + minutes + ':' + seconds }, 1000);
+    
+    </script>
+</body>
+</html>
